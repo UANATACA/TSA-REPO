@@ -5,7 +5,7 @@ info:
   description:
     $ref: ./tsa_gui.md
 servers:
-  - url: 'https://tsa.uanataca2.com'
+  - url: 'https://tsa.uanataca.com'
     description: Main server
 
 paths: {}
