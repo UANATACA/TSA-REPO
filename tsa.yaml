@@ -1,0 +1,11 @@
+openapi: 3.0.0
+info:
+  version: v1
+  title: UANATACA TSA API DOCUMENTATION
+  description:
+    $ref: ./TSA_guide.md
+servers:
+  - url: 'https://tsa.uanataca.com'
+    description: Main server
+
+paths: {}
