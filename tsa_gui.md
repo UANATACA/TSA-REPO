@@ -22,9 +22,9 @@ Creation of a .tsq digest output value using a hash algorithm for timestamping. 
 
 **Example**
 
-Hash generation using openssl and a SHA1 hash algorithm:
+Hash generation using openssl and a SHA512 hash algorithm:
 
-	1 | openssl ts -query -data testfile.pdf -no_nonce -sha1 -out request.tsq
+	1 | openssl ts -query -data testfile.pdf -no_nonce -sha512 -out request.tsq
 
 **Response**
 
