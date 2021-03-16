@@ -4,6 +4,9 @@ info:
   title: UANATACA TSA API DOCUMENTATION
   description:
     $ref: ./tsa_gui.md
+  x-logo:
+    url: https://i.ibb.co/9vpW5vs/tsa-logo.png
+    altText: Vol logo
 servers:
   - url: 'https://tsa.uanataca.com'
     description: Main server
