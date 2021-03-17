@@ -1,18 +1,34 @@
-# Introduction
+# What it is
 
-## What it is
+Time-stamping is an online service that provides irrefutable proof regarding to the existence of certain electronic data before a particular time, the time at which the timestamp was issued, and certifies such data has not been altered ever since.
 
-SmartTSA is an online service that provides irrefutable proof regarding to the existence of certain electronic data before a particular time, the time at which the timestamp was issued, and certifies such data has not been altered ever since.
+# How it works
 
-## How it works
-
-Unlike other Uanataca services, SmartTSA does not make use of RESTful API’s in its process. It simply performs request and response messages over TCP (Transmission Control Protocol) in compliance to the Internet standard IETF-PKIX RFC-3161 “Internet X.509 Public Key Infrastructure Time-Stamp Protocol (TSP)”.
+Unlike other Uanataca services, timestamp service does not make use of a RESTful API in its process. It simply performs request and response messages over TCP (Transmission Control Protocol) in compliance to the Internet standard IETF-PKIX RFC-3161 “Internet X.509 Public Key Infrastructure Time-Stamp Protocol (TSP)”.
 
 The process starts when a client generates a hash value representing the data that is required to stamp. 
 
-Secondly, the client sends a timestamp request to the Time Stamp Authority (TSA) server including the hash value and the correct service credentials.
+Secondly, the client sends a timestamp request to the Time Stamp Authority (TSA) server including the hash value and the correct Billing service credentials.
 
 The TSA responds generating a signed timestamp token including the initial hash with an attachment of the current date and time, the source of which is reliable and synchronized to UTC (Universal Time Coordinated).
+
+![img](https://i.ibb.co/djsQ4v1/tsa-wkf.png)
+
+# Requirements
+
+Uanataca time-stamping service requires a service endpoint with authentication.
+
+## Endpoint URL
+
+Uanataca qualified time-stamping service is exposed in:
+
+**https://tsa.uanataca.com/tsa/tss03**
+
+
+## Authentication
+
+The service requires an Uanataca Billing account. Billing credentials are composed by username and password.
+
 
 # Workflow
 
@@ -74,6 +90,3 @@ The process is completed when the requested timestamp is verified on the hash fi
 	23| qcStatements:
 	24|     0.0.......^..
 
-# Watch on Video
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tUGLf5y1dEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
