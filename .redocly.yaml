@@ -92,5 +92,4 @@ referenceDocs:
       backgroundColor: '#242424'
       borderRadius: '10px'         
     logo:
-      maxWidth: '260px'
-      maxHeight: '100px'
+      gutter: '20px'
