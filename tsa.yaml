@@ -5,7 +5,7 @@ info:
   description:
     $ref: ./tsa_gui.md
   x-logo:
-    url: https://i.ibb.co/3v16Zpr/tsa-logo.png
+    url: https://i.ibb.co/KwBsngj/tsa-logo.png
     altText: TSA logo
 servers:
   - url: 'https://tsa.uanataca.com/tsa/tss03'
