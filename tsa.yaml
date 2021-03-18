@@ -8,7 +8,7 @@ info:
     url: https://i.ibb.co/9vpW5vs/tsa-logo.png
     altText: Vol logo
 servers:
-  - url: 'https://tsa.uanataca.com/tsa/tss038'
+  - url: 'https://tsa.uanataca.com/tsa/tss03'
     description: Main server
 
 paths: {}
