@@ -1,16 +1,20 @@
 # What it is
 
+<div style="text-align: justify">
 Time-stamping is an online service that provides irrefutable proof regarding to the existence of certain electronic data before a particular time, the time at which the timestamp was issued, and certifies such data has not been altered ever since.
+</div>
 
 # How it works
 
+<div style="text-align: justify">
 Unlike other Uanataca services, timestamp service does not make use of a RESTful API in its process. It simply performs request and response messages over TCP (Transmission Control Protocol) in compliance to the Internet standard IETF-PKIX RFC-3161 “Internet X.509 Public Key Infrastructure Time-Stamp Protocol (TSP)”.
-
+<br></br>
 The process starts when a client generates a hash value representing the data that is required to stamp. 
-
+<br></br>
 Secondly, the client sends a timestamp request to the Time Stamp Authority (TSA) server including the hash value and the correct Billing service credentials.
-
+<br></br>
 The TSA responds generating a signed timestamp token including the initial hash with an attachment of the current date and time, the source of which is reliable and synchronized to UTC (Universal Time Coordinated).
+</div>
 <br></br>
 
 ![img](https://i.ibb.co/djsQ4v1/tsa-wkf.png)
