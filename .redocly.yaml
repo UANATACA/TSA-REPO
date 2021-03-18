@@ -13,8 +13,8 @@ referenceDocs:
       - lang: "C#"
   theme:
     logo:
-      maxHeight: '100px'
-      maxWidth: '260px'
+      maxHeight: '200px'
+      maxWidth: '520px'
     spacing:
       sectionHorizontal: 80
       sectionVertical: 35 
