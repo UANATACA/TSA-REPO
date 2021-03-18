@@ -93,3 +93,5 @@ referenceDocs:
       borderRadius: '10px'         
     logo:
       gutter: '20px'
+      maxWidth: '260px'
+      maxHeight: '100px'
