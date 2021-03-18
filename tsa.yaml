@@ -6,7 +6,7 @@ info:
     $ref: ./tsa_gui.md
   x-logo:
     url: https://i.ibb.co/9vpW5vs/tsa-logo.png
-    altText: Vol logo
+    altText: TSA logo
 servers:
   - url: 'https://tsa.uanataca.com/tsa/tss03'
     description: Main server
