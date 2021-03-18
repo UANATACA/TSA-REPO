@@ -14,9 +14,10 @@ The TSA responds generating a signed timestamp token including the initial hash 
 
 ![img](https://i.ibb.co/djsQ4v1/tsa-wkf.png)
 
+
 # Requirements
 
-Uanataca time-stamping service requires a service endpoint with authentication.
+Uanataca time-stamping is an online service that requires an endpoint url with authentication.
 
 ## Endpoint URL
 
@@ -27,14 +28,16 @@ Uanataca qualified time-stamping service is exposed in:
 
 ## Authentication
 
-The service requires an Uanataca Billing account. Billing credentials are composed by username and password.
+The service requires a Uanataca **Billing account**. Billing credentials are composed by username and password.
 
 
 # Workflow
 
-## Hash Generation
+Timestamp service process involves the following 3 steps:
 
-Creation of a .tsq digest output value using a hash algorithm for timestamping. The original document is not sent to the server. 
+> STEP 1: Hash generation
+
+The original document is not sent to the TSA service. Instead is sent a hash of the document to the service. The hash doesn't contain document information. The timestamp request .tsq digest output value is created using a SHA512 hash algorithm. 
 
 **Example**
 
@@ -46,9 +49,9 @@ Hash generation using openssl and a SHA512 hash algorithm:
 
 The .tsq file ready to be included in the request call to the TSA server.
 
-## Requests
+> STEP 2: Timestamp request
 
-An HTTP request to the TSA server using the calculated hash value is sent. At this point the hash file, the server URL and the client billing credentials must be included. 
+An HTTP request to the TSA server sending the calculated hash value .tsq. At this point is required the hash file, the server URL and the client billing credentials to be included in the request. 
 
 **Example**
 
@@ -56,15 +59,17 @@ An HTTP request to the TSA server using the calculated hash value is sent. At th
 
 **Response**
 
-The .tsr file (the hash file with the timestamp) ready for verification.
+The .tsr file that contains the hash file with the timestamp ready for verification.
 
-## Verification
+> STEP 3: Verification
 
-The process is completed when the requested timestamp is verified on the hash file.
+It is recommended to verify the timestamp response to complete the process.
+
+**Example**
 
 	1 | openssl ts -reply -in response.tsr -text
 
-**Output Example**
+**Response**
 
 	1 | Status info:
 	2 | Status: Granted.
