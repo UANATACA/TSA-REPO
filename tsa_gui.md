@@ -15,7 +15,6 @@ The TSA responds generating a signed timestamp token including the initial hash 
 
 ![img](https://i.ibb.co/djsQ4v1/tsa-wkf.png)
 
-
 # Requirements
 
 Uanataca time-stamping is an online service that requires an endpoint url with authentication.
