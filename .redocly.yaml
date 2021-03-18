@@ -12,6 +12,9 @@ referenceDocs:
       - lang: "Node.js"
       - lang: "C#"
   theme:
+    logo:
+      maxHeight: '100px'
+      maxWidth: '260px'
     spacing:
       sectionHorizontal: 80
       sectionVertical: 35 
