@@ -57,7 +57,7 @@ An HTTP request to the TSA server sending the calculated hash value .tsq. At thi
 
 **Example**
 
-	1 | curl -H “Content-Type:application/timestamp-query” --data-binary @request.tsq https://tsa.uanataca.com/tsa/tss03 -o response.tsr -u user:password
+	1 | curl -H “Content-Type:application/timestamp-query” --data-binary @request.tsq https://tsa.uanataca.com/tsa/tss03 -o response.tsr -u billing_username:billing_password
 
 **Response**
 
