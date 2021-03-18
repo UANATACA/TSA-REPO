@@ -1,5 +1,5 @@
 apiDefinitions:
-  main: ./tsa.yaml
+  main: tsa.yaml
 referenceDocs:
   hideDownloadButton: true
   showConsole: false
@@ -90,7 +90,6 @@ referenceDocs:
       textColor: '#FFFFFF'
     codeSample:
       backgroundColor: '#242424'
-      borderRadius: '10px'   
+      borderRadius: '10px'         
     logo:
-      maxHeight: '200px'
-      maxWidth: '520px'      
+      gutter: '20px'
