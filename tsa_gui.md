@@ -34,6 +34,7 @@ The service requires a Uanataca **Billing account**. Billing credentials are com
 # Workflow
 
 Timestamp service process involves the following 3 steps:
+</br>
 
 > STEP 1: Hash generation
 
@@ -48,6 +49,7 @@ Hash generation using openssl and a SHA512 hash algorithm:
 **Response**
 
 The .tsq file ready to be included in the request call to the TSA server.
+</br>
 
 > STEP 2: Timestamp request
 
@@ -60,6 +62,7 @@ An HTTP request to the TSA server sending the calculated hash value .tsq. At thi
 **Response**
 
 The .tsr file that contains the hash file with the timestamp ready for verification.
+</br>
 
 > STEP 3: Verification
 
