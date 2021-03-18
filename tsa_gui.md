@@ -11,6 +11,7 @@ The process starts when a client generates a hash value representing the data th
 Secondly, the client sends a timestamp request to the Time Stamp Authority (TSA) server including the hash value and the correct Billing service credentials.
 
 The TSA responds generating a signed timestamp token including the initial hash with an attachment of the current date and time, the source of which is reliable and synchronized to UTC (Universal Time Coordinated).
+<br></br>
 
 ![img](https://i.ibb.co/djsQ4v1/tsa-wkf.png)
 
