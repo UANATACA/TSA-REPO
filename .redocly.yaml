@@ -12,9 +12,6 @@ referenceDocs:
       - lang: "Node.js"
       - lang: "C#"
   theme:
-    logo:
-      maxHeight: '200px'
-      maxWidth: '520px'
     spacing:
       sectionHorizontal: 80
       sectionVertical: 35 
@@ -93,4 +90,7 @@ referenceDocs:
       textColor: '#FFFFFF'
     codeSample:
       backgroundColor: '#242424'
-      borderRadius: '10px'         
+      borderRadius: '10px'   
+    logo:
+      maxHeight: '200px'
+      maxWidth: '520px'      
