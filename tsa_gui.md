@@ -43,13 +43,13 @@ Timestamp service process involves the following 3 steps:
 
 > STEP 1: Hash generation
 
-The original document is not sent to the TSA service. Instead is sent a hash of the document to the service. The hash doesn't contain document information. The timestamp request .tsq digest output value is created using a SHA512 hash algorithm. 
+The original document is not sent to the TSA service. Instead is sent a hash of the document to the service. The hash doesn't contain document information. The timestamp request .tsq digest output value is created using a SHA256 hash algorithm.
 
 **Example**
 
-Hash generation using openssl and a SHA512 hash algorithm:
+Hash generation using openssl and a SHA256 hash algorithm:
 
-	1 | openssl ts -query -data testfile.pdf -no_nonce -sha512 -out request.tsq
+	1 | openssl ts -query -data testfile.pdf -no_nonce -sha256 -out request.tsq
 
 **Response**
 
