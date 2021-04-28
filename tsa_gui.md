@@ -89,7 +89,7 @@ It is recommended to verify the timestamp response to complete the process.
 	6 | TST info:
 	7 | Version: 1
 	8 | Policy OID: 0.4.0.2023.1.1
-	9 | Hash Algorithm: sha512
+	9 | Hash Algorithm: sha256
 	10| Message data:
 	11|     0000 - 22 e7 e9 67 5c 6b d7 ea-b6 7f 35 f0 e4 32 c6 9c   "..g\k....5..2..
 	12|     0010 - 98 e0 b0 f3 9c d7 ae dc-a8 6e 23 78 9f 75 28 6d   .........n#x.u(m
