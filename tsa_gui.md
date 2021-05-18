@@ -20,7 +20,7 @@ The TSA responds generating a signed timestamp token including the initial hash 
 </div>
 <br></br>
 
-![img](https://raw.githubusercontent.com/UANATACA/TSA-REPO/main/img/tsa_hiw.png?token=ATF574Q6RJUP6ABHDTOFKHTALXHCM)
+![img](https://github.com/UANATACA/TSA-REPO/raw/main/img/tsa_hiw.png){ style="width: 80%; display: block; margin-left: auto; margin-right: auto"}
 
 # Requirements
 
