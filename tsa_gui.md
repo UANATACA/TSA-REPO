@@ -1,7 +1,12 @@
 # What it is
 
 <div style="text-align: justify">
-Time-stamping is an online service that provides irrefutable proof regarding to the existence of certain electronic data before a particular time, the time at which the timestamp was issued, and certifies such data has not been altered ever since.
+Uanataca qualified timestamp service is the only one that has full legal value, with reversal of the burden of proof, as required by the European Regulation 910/2014 and in many other international regulations.
+<br></br>
+The service provides an easy and low-cost method to apply reliable date and time and integrity on documents or transactions.
+<br></br>
+It is an online service that provides irrefutable proof regarding to the existence of certain electronic data before a particular time.
+
 </div>
 
 # How it works
@@ -9,11 +14,9 @@ Time-stamping is an online service that provides irrefutable proof regarding to 
 <div style="text-align: justify">
 Unlike other Uanataca services, timestamp service does not make use of a RESTful API in its process. It simply performs request and response messages over TCP (Transmission Control Protocol) in compliance to the Internet standard IETF-PKIX RFC-3161 “Internet X.509 Public Key Infrastructure Time-Stamp Protocol (TSP)”.
 <br></br>
-The process starts when a client generates a hash value representing the data that is required to stamp. 
+The process starts when a client generates a hash value representing the data that is required to stamp. Then, the client sends a timestamp request to the Time Stamp Authority (TSA) server including the hash value and the correct Billing service credentials.
 <br></br>
-Secondly, the client sends a timestamp request to the Time Stamp Authority (TSA) server including the hash value and the correct Billing service credentials.
-<br></br>
-The TSA responds generating a signed timestamp token including the initial hash with an attachment of the current date and time, the source of which is reliable and synchronized to UTC (Universal Time Coordinated).
+The TSA responds generating a signed timestamp token including the initial hash with an attachment of the current date and time.
 </div>
 <br></br>
 
