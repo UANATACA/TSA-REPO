@@ -52,7 +52,7 @@ The original document is not sent to the TSA service. Instead is sent a hash of 
 
 Hash generation using openssl and a SHA256 hash algorithm:
 
-	1 | openssl ts -query -data testfile.pdf -no_nonce -sha256 -out request.tsq
+	openssl ts -query -data testfile.pdf -no_nonce -sha256 -out request.tsq
 
 **Response**
 
@@ -66,7 +66,12 @@ An HTTP request to the TSA server sending the calculated hash value .tsq. At thi
 
 **Example**
 
-	1 | curl -H “Content-Type:application/timestamp-query” --data-binary @request.tsq https://tsa.uanataca.com/tsa/tss03 -o response.tsr -u billing_username:billing_password
+	// Linux
+	curl -H 'Content-Type:application/timestamp-query' --data-binary @request.tsq https://tsa.uanataca.com/tsa/tss03 -o response.tsr -u billing_username:billing_password
+
+	// Windows
+	curl -H "Content-Type:application/timestamp-query" --data-binary @request.tsq https://tsa.uanataca.com/tsa/tss03 -o response.tsr -u billing_username:billing_password
+
 
 **Response**
 
@@ -80,7 +85,7 @@ It is recommended to verify the timestamp response to complete the process.
 
 **Example**
 
-	1 | openssl ts -reply -in response.tsr -text
+	openssl ts -reply -in response.tsr -text
 
 **Response**
 
