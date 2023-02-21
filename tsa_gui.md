@@ -30,12 +30,16 @@ Uanataca time-stamping is an online service that requires an endpoint url with a
 
 Uanataca qualified time-stamping service is exposed in:
 
-**https://tsa.uanataca.com/tsa/tss03**
+**https://tsa.uanataca.com/tsa/tss03** in production environment
+
+**https://tsa.sandbox.uanataca.com/tsa/tss03** in sandbox environment
 
 
 ## Authentication
 
 The service requires a Uanataca **Billing account**. Billing credentials are composed by username and password.
+
+Keep in mind that each environment will need it's own credentials.
 
 
 # Workflow
